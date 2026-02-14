@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Subscribers</title>
+    <style>
+        :root {
+            --primary: #ff0000; /* YouTube Red */
+            --special: #ffd700; /* Gold */
+            --cool: #00d4ff;    /* Cyan */
+            --dark: #121212;
+            --card: #1e1e1e;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 { color: var(--primary); margin-bottom: 10px; }
+        p { opacity: 0.8; margin-bottom: 40px; }
+
+        .container { max-width: 800px; margin: 0 auto; }
+
+        /* Tier Sections */
+        .tier { margin-bottom: 50px; }
+        .tier-title {
+            font-size: 1.5rem;
+            padding: 10px;
+            border-bottom: 2px solid;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Tier Colors */
+        .special-subs .tier-title { color: var(--special); border-color: var(--special); }
+        .cool-subs .tier-title { color: var(--cool); border-color: var(--cool); }
+        .general-subs .tier-title { color: #bbb; border-color: #444; }
+
+        /* Name Grid */
+        .name-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .name-card {
+            background: var(--card);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s;
+            border: 1px solid #333;
+        }
+
+        .name-card:hover { transform: scale(1.1); background: #333; }
+
+        /* Specific tier styling */
+        .special-subs .name-card { border: 1px solid var(--special); color: var(--special); box-shadow: 0 0 10px rgba(255, 215, 0, 0.2); }
+        .cool-subs .name-card { border: 1px solid var(--cool); color: var(--cool); }
+
+        /* AdSense Placeholder */
+        .ad-space {
+            background: #252525;
+            padding: 20px;
+            margin: 40px 0;
+            border-radius: 8px;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>YouTube Subscriber Wall</h1>
+        <p>A huge thanks to everyone who supports the channel!</p>
+
+        <div class="ad-space">Google AdSense Unit (Top)</div>
+
+        <section class="tier special-subs">
+            <div class="tier-title">🌟 Special Subs</div>
+            <div class="name-grid">
+                <div class="name-card">LegendarySub1</div>
+                <div class="name-card">SuperFan99</div>
+                <div class="name-card">VipMember</div>
+            </div>
+        </section>
+
+        <section class="tier cool-subs">
+            <div class="tier-title">😎 Cool Subs</div>
+            <div class="name-grid">
+                <div class="name-card">RadUser_22</div>
+                <div class="name-card">CoolCat07</div>
+                <div class="name-card">TechLover</div>
+                <div class="name-card">GamerPro</div>
+            </div>
+        </section>
+
+        <section class="tier general-subs">
+            <div class="tier-title">🙌 The Squad</div>
+            <div class="name-grid">
+                <div class="name-card">User1</div>
+                <div class="name-card">User2</div>
+                <div class="name-card">User3</div>
+                <div class="name-card">User4</div>
+                <div class="name-card">User5</div>
+            </div>
+        </section>
+
+        <div class="ad-space">Google AdSense Unit (Bottom)</div>
+
+    </div>
+
+</body>
+</html>
